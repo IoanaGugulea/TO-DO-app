@@ -1,0 +1,146 @@
+/* styles.css */
+
+/* Global styles */
+body {
+    background-image: url('/static/images/background.jpeg');
+    background-size: cover; /* Make the image cover the entire page */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating */
+}
+
+
+
+/* Header */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #343a40;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+/* Adjust navbar styles to prevent logout from going too far right */
+.navbar-nav {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.navbar-nav.ml-auto {
+    margin-left: 1150px;  /* Ensure the logout is pushed to the right */
+    margin-right: auto;  /* Add space to the right side */
+}
+
+.nav-item {
+    margin-left: 10px;  /* Space between items */
+}
+
+/* Additional adjustments to logout button */
+.navbar-nav .nav-item form button {
+    margin-left: 10px;  /* Space between logout and other items */
+    padding: 8px 12px;   /* Adjust button size */
+}
+
+/* Task List */
+.task-list {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0;
+    list-style-type: none;
+}
+
+.task-list li {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-list li.completed {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+/* Buttons */
+button {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button.delete {
+    background-color: #dc3545;
+}
+
+button.delete:hover {
+    background-color: #b71c86;
+}
+
+/* Forms */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="text"],
+form input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
